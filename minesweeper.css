@@ -1,0 +1,93 @@
+/* Reset & Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Board Container */
+#board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game Board */
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: #2c2c2c;
+    border: 5px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Tiles */
+#board div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #3a3a3a;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    user-select: none;
+}
+
+.tile-clicked {
+    background-color: #3e3e3e;
+}
+
+.x1 { color: #4da6ff; }
+.x2 { color: #33cc33; }
+.x3 { color: #ff4d4d; }
+.x4 { color: #6666ff; }
+.x5 { color: #cc6600; }
+.x6 { color: #00cccc; }
+.x7 { color: #e6e600; }
+.x8 { color: #999999; }
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+#flag-button,
+#retry-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(255,255,255,0.1);
+}
+
+#flag-button:hover,
+#retry-button:hover {
+    background-color: #555;
+}
+
+/* Responsive Text Fix */
+#retry-button {
+    white-space: nowrap;
+}
